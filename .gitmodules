@@ -1,0 +1,6 @@
+[submodule "portfolio"]
+	path = portfolio
+	url = https://github.com/michaeleze/portfolio
+[submodule "website-server"]
+	path = website-server
+	url = https://github.com/michaeleze/website-server
