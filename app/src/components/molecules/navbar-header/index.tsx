@@ -12,7 +12,7 @@ interface NavBarHeader {
 
 const NavBarHeader: React.FC<NavBarHeader> = (props) => {
   const {
-    menu = 'MENU',
+    menu = 'Menu',
     handleCloseMenu,
     handleOpenMenu,
     openMenu,

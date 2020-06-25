@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 
 async function apiLocaHost() {
-  const data = await fetch('http://localhost:8003');
+  const data = await fetch('https://us-central1-portfoliowebsite-23bb3.cloudfunctions.net/server/work');
 
   if (!data) {
     return Promise.reject(Error('could not retrieve data'));
@@ -16,10 +16,9 @@ const Work: React.FC = () => {
 
   useEffect(() => {
     apiLocaHost()
-      .then((response) => response?.text()
+      .then((response) => response!.json()
             .then((res) => {
-              console.log(JSON.parse(res));
-              setState(res);
+              setState(res!.data);
             }))
       .catch((error) => { throw Error(error); });
   }, [state]);

@@ -13,7 +13,7 @@ interface IContact {
 }
 
 const ContactContent: React.FC<any> = ({
-  body = " Let's work together",
+  body = " Let'models work together",
   footer = 'Find me on social media, or write me an email',
   classes,
   headline = 'Say Hi!',
