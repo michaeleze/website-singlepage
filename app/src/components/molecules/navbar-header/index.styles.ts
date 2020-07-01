@@ -81,7 +81,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: '11px  0',
     fontWeight: 'lighter',
     fontSize: '1.3em',
-    textTransform: 'capitalize'
+    textTransform: 'uppercase'
   },
 
   title: {
@@ -93,6 +93,6 @@ export const useStyles = makeStyles((theme) => ({
     transition: 'background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)',
     transitionProperty: 'background-color',
     backgroundColor: 'white',
-    borderBottom: '1px solid black'
+    borderBottom: '1px solid #E8E8E8'
   },
 }));

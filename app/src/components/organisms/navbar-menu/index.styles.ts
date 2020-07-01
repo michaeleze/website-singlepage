@@ -21,6 +21,7 @@ export const useStyles = makeStyles(() => ({
   },
 
   linkContainer: {
+    boxSizing: 'border-box',
     padding: '0 1em',
 
     '@media (max-width: 978px)': {
@@ -39,19 +40,19 @@ export const useStyles = makeStyles(() => ({
   },
 
   navMenu: {
+    boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around',
     alignItems: 'center',
-    fontSize: '3.5rem',
-    fontWeight: 'lighter',
+    fontSize: '4.1rem',
     textTransform: 'capitalize',
     flexGrow: 1,
     padding: '2em 0 0 0',
+    whiteSpace: 'nowrap',
     overflow: 'auto',
 
     '@media (max-width: 678px)': {
-      alignItems: 'flex-start',
+      alignItems: 'center',
       flexDirection: 'column',
       fontSize: '3rem',
       justifyContent: 'flex-start',

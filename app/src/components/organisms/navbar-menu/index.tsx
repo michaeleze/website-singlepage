@@ -19,7 +19,7 @@ const NavBarMenu: React.FC<INavbar> = (props) => {
     openMenu,
     routes,
     socialMedia,
-    text = 'DESIGNED BY MICHAELEZE',
+    text = 'Designed by MichaelEze',
   } = props;
 
   const classes = useStyles();
