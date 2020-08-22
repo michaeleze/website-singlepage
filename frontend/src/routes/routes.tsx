@@ -1,4 +1,4 @@
-import { AboutMe, Home } from '.././pages';
+import { AboutMe, Home } from '../views';
 
 export interface IRoutes {
     path: string;
