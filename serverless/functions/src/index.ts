@@ -1,19 +1,14 @@
+/**
+ * This is a serverless server created with by @MichaelCityboy using firebase
+ * It is kept along side with the app package as a prove that i created it :)
+ * it will be moved to it's own package and repo later
+ */
 import * as functions from 'firebase-functions';
 const express = require('express');
-const cors = require('cors');
+import homeController from './controller/home';
 
-// Start writing Firebase Functions
-// https://firebase.google.com/docs/functions/typescript
 const app = express();
 
-app.use(cors({ origin: true }));
-
-app.get('/', (req: any, res: any) => {
- return res.status(200).json({ data: 'Hello World!' });
-});
-
-app.get('/work', (req: any, res: any) => {
-    return res.status(200).json({ data: 'Data for works' });
-});
+app.get('/', homeController);
 
 export const server = functions.https.onRequest(app);

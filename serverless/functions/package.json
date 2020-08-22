@@ -1,4 +1,6 @@
 {
+  "author": "Michael Eze",
+  "description": "Serverless server for personal website",
   "name": "functions",
   "scripts": {
     "lint": "tslint --project tsconfig.json",
@@ -14,7 +16,6 @@
   },
   "main": "dist/index.js",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "firebase-admin": "^8.10.0",
