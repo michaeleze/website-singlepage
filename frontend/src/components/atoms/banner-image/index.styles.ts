@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
   container: {
-    color: '#fff',
+    color: '#000',
     display: 'flex',
     fontSize: '3em',
     left: '0',

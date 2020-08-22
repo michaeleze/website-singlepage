@@ -1,15 +1,14 @@
 import React from 'react';
 import TwoColumnLayout from '../../organisms/two-column-layout';
 import { useStyles } from './index.styles';
-import Banner from '../../atoms/banner';
+import { IContent } from '../../organisms/two-column-layout'
 
 interface IHomeTemplate {
-  data?: any;
+  content?: IContent
 }
 
 const HomeTemplate: React.FC<IHomeTemplate> = (props) => {
-  const { data } = props;
-  const { banner, content } = data;
+  const { content } = props;
 
   const classes = useStyles();
 
@@ -18,12 +17,7 @@ const HomeTemplate: React.FC<IHomeTemplate> = (props) => {
     rightColumn: classes.rightColumn,
   };
 
-  return (
-    <>
-      <TwoColumnLayout content={content} styles={styles} />
-      <Banner src={banner} />
-    </>
-  );
+  return (<TwoColumnLayout content={content} styles={styles} />);
 };
 
 export default HomeTemplate;
