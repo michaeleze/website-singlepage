@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStyles } from './index.styles';
+import { mockSocialMediaItems } from './index.socialmedia';
 
 export interface ISocialMedia {
   link: string;
@@ -14,7 +15,7 @@ export interface ISocialMediaLinks{
 const SocialMediaLinks: React.FC<ISocialMediaLinks> = (props) => {
   const {
     styles,
-    socialMedia = [],
+    socialMedia = mockSocialMediaItems,
   } = props;
 
   const defaultClasses = useStyles();
