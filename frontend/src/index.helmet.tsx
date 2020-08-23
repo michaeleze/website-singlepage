@@ -24,7 +24,7 @@ const ReactApp = () => (
             <meta name="linkedin:site" content="https://linkedin.com/in/michaeleze"/>
             <meta name="linkedin:title" content="Michael Eze &mdash; Germany Based Full-Stack React Developer"/>
             <meta name="linkedin:description"
-                  content="Michael Eze is a passionate Software Engineer | FrontEnd and full-stack React developer also skilled in UX designing based in Germany. Hobbies include programming, dancing, music, cooking and sports(basket ball and football)"/>
+                  content="Michael Eze is a passionate Software Engineer <FrontEnd /> and full-stack React developer also skilled in UX designing based in Germany. Hobbies include programming, dancing, music, cooking and sports(basket ball and football)"/>
             <meta name="linkedin:image" content="%PUBLIC_URL%/me.jpg"/>
             <link rel="icon" href="%PUBLIC_URL%/me.jpg"/>
             <meta name="viewport"
@@ -34,7 +34,6 @@ const ReactApp = () => (
             <title ng-bind="_title">Michael Eze &mdash; Germany Based Full-Stack Software Engineer</title>
             <link rel="apple-touch-icon" href="logo192.png"/>
         </Helmet>
-
         <App />
     </>
 );

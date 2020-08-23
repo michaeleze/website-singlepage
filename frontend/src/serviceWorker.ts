@@ -7,7 +7,7 @@
 // existing tabs open on the page have been closed, since previously cached
 // resources are updated in the background.
 
-// To learn more about-me the benefits of this controller and instructions on how to
+// To learn more aboutme the benefits of this controller and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 
 const isLocalhost = Boolean(
