@@ -3,25 +3,14 @@ import Grid from '@material-ui/core/Grid';
 import { useStyles } from './index.styles';
 
 export interface IContent {
-    leftColumn?: ReactElement | undefined;
-    rightColumn?: ReactElement | undefined;
+    leftContent?: ReactElement | undefined;
+    rightContent?: ReactElement | undefined;
 }
 
-export interface ITwoColumnLayout {
-  content?: IContent;
-  styles?: {
-    leftColumn?: string | undefined;
-    rightColumn?: string | undefined;
-  };
-}
-
-const TwoColumnLayout: React.FC<ITwoColumnLayout> = (props) => {
+const TwoColumnLayout: React.FC<IContent> = (props) => {
   const classes = useStyles();
 
-  const {
-    content,
-    styles,
-  } = props;
+  const { leftContent, rightContent } = props;
 
   return (
     <Grid container className={classes?.container}>
@@ -31,9 +20,7 @@ const TwoColumnLayout: React.FC<ITwoColumnLayout> = (props) => {
         sm={6}
         xs={12}
       >
-        <div className={styles?.leftColumn}>
-          {content?.leftColumn}
-        </div>
+          {leftContent}
       </Grid>
       <Grid
         item
@@ -41,9 +28,7 @@ const TwoColumnLayout: React.FC<ITwoColumnLayout> = (props) => {
         sm={6}
         xs={12}
       >
-        <div className={styles?.rightColumn}>
-          {content?.rightColumn}
-        </div>
+          {rightContent}
       </Grid>
     </Grid>
   );

@@ -6,14 +6,14 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   leftColumn: {
-    [theme.breakpoints.down('sm')]: {
+    borderTop: '4px solid #ffdd00',
+    [theme.breakpoints.down('md')]: {
       order: 2,
-      flexBasis: '100%',
     },
   },
 
   rightColumn: {
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       order: 1,
     },
   },
