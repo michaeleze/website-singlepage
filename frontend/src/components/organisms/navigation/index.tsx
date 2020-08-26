@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import NavBarMenu from '../navbar-menu';
 import NavBarHeader from '../../molecules/navbar-header';
 import { routes } from '../../../routes/routes';
-import { mockSocialMediaItems } from '../../../index.socialmedia';
+import { mockSocialMediaItems } from '../../molecules/socialmedia-links/index.socialmedia';
 
 const Navigation = () => {
     const [openMenu, setOpenMenu] = useState<boolean>(false);
