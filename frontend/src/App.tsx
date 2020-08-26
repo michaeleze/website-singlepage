@@ -5,7 +5,8 @@ import Routes from "./routes";
 
 const App: React.FC = () => (
     <BrowserRouter>
-      <Routes />
+        <Navigation />
+        <Routes />
     </BrowserRouter>
   );
 

@@ -2,12 +2,13 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
   container: {
-    minHeight: '100vh',
+    height: '100vh',
   },
 
   leftColumn: {
-    borderTop: '4px solid #ffdd00',
-    [theme.breakpoints.down('md')]: {
+    padding: '15px',
+    boxSizing: 'border-box',
+    [theme.breakpoints.down('sm')]: {
       order: 2,
     },
   },
