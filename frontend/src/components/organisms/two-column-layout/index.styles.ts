@@ -14,7 +14,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   rightColumn: {
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       order: 1,
     },
   },
