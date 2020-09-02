@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Home from './index';
+import Contact from './index';
 
-export const home = () => <Home />;
+export const contact = () => <Contact />;
 
 export default {
-  title: 'Pages | Home',
+  title: 'View | Contact',
 };

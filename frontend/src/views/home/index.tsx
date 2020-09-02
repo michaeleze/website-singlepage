@@ -7,22 +7,23 @@ import React, {
 import Me from '../../assets/images/me5.jpg';
 import SocialMediaLinks from '../../components/molecules/socialmedia-links'
 import { homeService } from '../../services/home';
+import {Typography} from "@material-ui/core";
 
 const HomeTemplate = lazy(() => import('../../components/templates/home-template'));
 
 const LeftContent = (props: any) => {
-    const { content = [] } = props;
+    const { content } = props;
 
     return(
-        <div style={{backgroundColor: '#fff', display: 'grid', gridTemplateColumns: 'repeat(9,1fr)', gridTemplateRows: 'repeat(9,1fr)', height: '100%'}}>
-            <div style={{gridRow: '3/8', gridColumn: "2/3"}}>
-                {
-                    content.map((item: any) => <> {item.country} </>)
-                }
-            </div>
-            <div style={{gridRow: '9', gridColumn: "10/1", background: '#ebebeb', padding: '10px 0', boxSizing: 'border-box', width: '100%'}}>
-                <SocialMediaLinks />
-            </div>
+        <div style={{backgroundColor: '#fff', height: '100%', display: 'flex', justifyContent:'space-around', flexDirection: 'column', maxWidth: '90%', margin: 'auto', position: "relative"}}>
+            <Typography variant="h2" component="h2" color={'secondary'}>
+                {content?.title}
+            </Typography>
+            <Typography variant="body1">
+                {content?.body}
+                {content?.body2}
+            </Typography>
+            <SocialMediaLinks />
         </div>
     );
 }
@@ -34,7 +35,7 @@ const RightContent: React.FC = () => <div style={{height: '100%', background:'#0
 
 
 const Home: React.FC = (): React.ReactElement => {
-    const [state, setState] = useState<Array<string>>();
+    const [state, setState] = useState();
     const content = { leftContent: <LeftContent content={state} />, rightContent: <RightContent /> };
 
     useEffect(() => {

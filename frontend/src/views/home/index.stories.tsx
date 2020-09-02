@@ -4,5 +4,5 @@ import Home from './index';
 export const home = () => <Home />;
 
 export default {
-  title: 'Pages | Home',
+  title: 'View | Home',
 };

@@ -13,10 +13,11 @@ class Query{
             Promise.reject(Error(this.ERRORMESSAGE));
         }
 
+        console.log('data', data)
         const res = await data.json();
         return Promise.resolve(res);
     }
 }
 
-const endpoint = 'http://localhost:5001/portfoliowebsite-23bb3/us-central1/server';
+const endpoint = 'https://us-central1-portfoliowebsite-23bb3.cloudfunctions.net/server';
 export const homeService = new Query(endpoint);

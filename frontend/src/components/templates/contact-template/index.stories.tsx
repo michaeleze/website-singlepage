@@ -1,8 +1,8 @@
 import * as React from 'react';
-import HomeTemplate from './index';
+import ContactTemplate from './index';
 
-export const homeTemplate = () => <HomeTemplate />;
+export const contactTemplate = () => <ContactTemplate />;
 
 export default {
-  title: 'Templates | HomeTemplate',
+  title: 'Templates | ContactTemplate',
 };

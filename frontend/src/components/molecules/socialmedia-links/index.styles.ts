@@ -1,16 +1,10 @@
 import { makeStyles } from '@material-ui/core';
 
 export const useStyles = makeStyles((theme) => ({
-  footer: {
-    textAlign: 'center',
-  },
-
   icon: {
     color: 'rgba(34,26,45,0.8)',
-    fontSize: '3em',
-    textAlign: 'center',
+    fontSize: '2em',
     textDecoration: 'none',
-    margin: '0 1em',
     transition: 'all 1s ease',
 
     '&:hover': {
@@ -33,11 +27,12 @@ export const useStyles = makeStyles((theme) => ({
 
   socialMedia: {
     margin: 0,
-    padding: '0 0 1em 0',
-    textAlign: 'center',
+    padding: 0,
+    textAlign: 'left',
   },
 
   socialMediaIcon: {
     display: 'inline-block',
+    padding: '.5em 1em',
   },
 }));
