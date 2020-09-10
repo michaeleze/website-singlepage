@@ -6,8 +6,6 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   leftColumn: {
-    padding: '15px',
-    boxSizing: 'border-box',
     [theme.breakpoints.down('sm')]: {
       order: 2,
     },

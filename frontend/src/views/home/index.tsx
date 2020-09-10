@@ -15,8 +15,8 @@ const LeftContent = (props: any) => {
     const { content } = props;
 
     return(
-        <div style={{backgroundColor: '#fff', height: '100%', display: 'flex', justifyContent:'space-around', flexDirection: 'column', maxWidth: '90%', margin: 'auto', position: "relative"}}>
-            <Typography variant="h2" component="h2" color={'secondary'}>
+        <div style={{backgroundColor: '#ee2330', color: 'white', height: '100%', display: 'flex', justifyContent:'space-around', flexDirection: 'column', maxWidth: '90%', margin: 'auto', position: "relative"}}>
+            <Typography variant="h2" component="h2">
                 {content?.title}
             </Typography>
             <Typography variant="body1">
@@ -26,7 +26,7 @@ const LeftContent = (props: any) => {
             <SocialMediaLinks />
         </div>
     );
-}
+};
 
 const RightContent: React.FC = () => <div style={{height: '100%', background:'#0d1b2a'}}>
                        <img alt='michael-eze' srcSet={Me} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
