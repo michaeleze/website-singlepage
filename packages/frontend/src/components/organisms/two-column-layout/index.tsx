@@ -17,7 +17,7 @@ const TwoColumnLayout: React.FC<IContent> = (props) => {
       <Grid
         item
         className={classes?.leftColumn}
-        sm={8}
+        sm={7}
         xs={12}
       >
           {leftContent}
@@ -25,7 +25,7 @@ const TwoColumnLayout: React.FC<IContent> = (props) => {
       <Grid
         item
         className={classes.rightColumn}
-        sm={4}
+        sm={5}
         xs={12}
       >
           {rightContent}
