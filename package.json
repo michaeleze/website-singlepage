@@ -32,10 +32,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+     "test": "react-scripts test --watch --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 4000",
-    "start:dev": "npm install && concurrently --kill-others --raw \"npm run storybook\" \"npm run start\"",
+    "start": "npm run build && react-scripts start",
     "build-storybook": "build-storybook",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
