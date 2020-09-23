@@ -47,7 +47,7 @@ const Home: React.FC = (): React.ReactElement => {
             const response = await homeService.fetchData();
             setState(response);
         })()
-    },[homeService.fetchData])
+    },[]);
 
     return (
         <Suspense fallback={<div>Loading...</div>}>
