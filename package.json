@@ -8,7 +8,9 @@
   "description": "Portfolio website with serverless backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app": "run run start --scope=frontend",
+   "server": "npm run server --scope=server",
+    "start": "npm run server && npm run app"
   },
   "repository": {
     "type": "git",
