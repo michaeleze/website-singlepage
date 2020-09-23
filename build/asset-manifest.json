@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.c05ad25d.chunk.css",
-    "main.js": "./static/js/main.6790e3bf.chunk.js",
-    "main.js.map": "./static/js/main.6790e3bf.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.1bb7b13e.js",
-    "runtime-main.js.map": "./static/js/runtime-main.1bb7b13e.js.map",
-    "static/js/2.f6037ab7.chunk.js": "./static/js/2.f6037ab7.chunk.js",
-    "static/js/2.f6037ab7.chunk.js.map": "./static/js/2.f6037ab7.chunk.js.map",
-    "static/js/3.f42dfe72.chunk.js": "./static/js/3.f42dfe72.chunk.js",
-    "static/js/3.f42dfe72.chunk.js.map": "./static/js/3.f42dfe72.chunk.js.map",
-    "static/js/4.9bf68938.chunk.js": "./static/js/4.9bf68938.chunk.js",
-    "static/js/4.9bf68938.chunk.js.map": "./static/js/4.9bf68938.chunk.js.map",
+    "main.css": "./static/css/main.a9ceb3b5.chunk.css",
+    "main.js": "./static/js/main.0701ed13.chunk.js",
+    "main.js.map": "./static/js/main.0701ed13.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.db9c28ab.js",
+    "runtime-main.js.map": "./static/js/runtime-main.db9c28ab.js.map",
+    "static/js/2.40076a89.chunk.js": "./static/js/2.40076a89.chunk.js",
+    "static/js/2.40076a89.chunk.js.map": "./static/js/2.40076a89.chunk.js.map",
+    "static/js/3.ae51c2b1.chunk.js": "./static/js/3.ae51c2b1.chunk.js",
+    "static/js/3.ae51c2b1.chunk.js.map": "./static/js/3.ae51c2b1.chunk.js.map",
+    "static/js/4.e7ee4591.chunk.js": "./static/js/4.e7ee4591.chunk.js",
+    "static/js/4.e7ee4591.chunk.js.map": "./static/js/4.e7ee4591.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.a0d69e4b78a0c7cfb66e2083a391dbc0.js": "./precache-manifest.a0d69e4b78a0c7cfb66e2083a391dbc0.js",
+    "precache-manifest.a424027cf449d57d97049365a72c3c14.js": "./precache-manifest.a424027cf449d57d97049365a72c3c14.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.c05ad25d.chunk.css.map": "./static/css/main.c05ad25d.chunk.css.map",
-    "static/js/2.f6037ab7.chunk.js.LICENSE.txt": "./static/js/2.f6037ab7.chunk.js.LICENSE.txt",
+    "static/css/main.a9ceb3b5.chunk.css.map": "./static/css/main.a9ceb3b5.chunk.css.map",
+    "static/js/2.40076a89.chunk.js.LICENSE.txt": "./static/js/2.40076a89.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/Biotif-SemiBold.aeb8e6ef.ttf",
     "static/media/me2.png": "./static/media/me2.516af6b5.png",
     "static/media/me5.jpg": "./static/media/me5.89f58755.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1bb7b13e.js",
-    "static/js/2.f6037ab7.chunk.js",
-    "static/css/main.c05ad25d.chunk.css",
-    "static/js/main.6790e3bf.chunk.js"
+    "static/js/runtime-main.db9c28ab.js",
+    "static/js/2.40076a89.chunk.js",
+    "static/css/main.a9ceb3b5.chunk.css",
+    "static/js/main.0701ed13.chunk.js"
   ]
 }
