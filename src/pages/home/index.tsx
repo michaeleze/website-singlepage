@@ -6,7 +6,7 @@ import React, {
 } from 'react';
 import Me from '../../assets/images/me5.jpg';
 import SocialMediaLinks from '../../components/molecules/socialmedia-links'
-import Service from '../../services';
+import Service from '../../service';
 import {Typography} from "@material-ui/core";
 
 const HomeTemplate = lazy(() => import('../../components/templates/home-template'));
@@ -45,10 +45,10 @@ const Home: React.FC = (): React.ReactElement => {
     useEffect(() => {
         (async () => {
             const endpoint = 'https://portfolio-graphql-server.herokuapp.com/';
-            const query = '{getContent {homePage { \n header \n subHeader \n body } } }';
+            const query = '{homePage{ \n header \n subHeader \n body }}';
             const response = await Service.useFetch(endpoint, query);
 
-            setState(response.data.getContent.homePage);
+            setState(response.data.homePage);
         })()
     },[]);
 
