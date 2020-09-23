@@ -1,5 +1,5 @@
 const { GraphQLServer } = require('graphql-yoga');
-import { typeDefs } from './index.type';
+import { typeDefs } from './index.typeDef';
 import { content } from './model';
 
 const resolvers = {
@@ -17,6 +17,6 @@ const server = new GraphQLServer({
     resolvers
 });
 
-server.start(serverOptions).then(({ url }) => {
-    console.log(`🚀 Server ready at ${url}`);
+server.start(serverOptions).then(({port}: {port: string}) => {
+    console.log(`🚀 Server ready at ${port}`);
 });

@@ -2,7 +2,7 @@
   "author": "Michael Eze",
   "main": "dist/index",
   "description": "Personal website server",
-  "name": "functions",
+  "name": "server",
   "scripts": {
     "lint": "tslint --project tsconfig.json",
     "build": "tsc",
