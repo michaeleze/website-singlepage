@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 export const useStyles = makeStyles((theme) => ({
     body: {
         color: 'rgba(255,255,255,0.79)',
+        lineHeight: 1.5,
         fontWeight: 100,
         padding: '1vw 3vw',
         boxSizing: 'border-box',

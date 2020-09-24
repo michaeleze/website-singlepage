@@ -1,8 +1,6 @@
 import React from "react";
 import Me from "../../../assets/images/me5.jpg";
-import Me2 from "../../../assets/images/me.jpg";
 import {useStyles} from "./index.styles";
-import Grid from "@material-ui/core/Grid";
 
 export const ContentBottom: React.FC = () => {
     const classes = useStyles();

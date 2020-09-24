@@ -2,7 +2,6 @@ import {Typography} from "@material-ui/core";
 import SocialMediaLinks from "../../molecules/socialmedia-links";
 import React from "react";
 import {useStyles} from './index.styles';
-import Grid from "@material-ui/core/Grid";
 
 export const ContentTop = (props: any) => {
     const {body, header, subHeader} = props;
