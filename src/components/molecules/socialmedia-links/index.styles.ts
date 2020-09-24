@@ -16,15 +16,6 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
 
-  navLink: {
-    textDecoration: 'none',
-    transition: 'all 1s ease',
-
-    '&:hover': {
-      color: '#FC173E',
-    },
-  },
-
   socialMedia: {
     margin: 0,
     padding: 0,

@@ -15,7 +15,7 @@ export const useStyles = makeStyles((theme) => ({
     // backdropFilter: 'saturate(147%) blur(20px)',
     // transition: 'background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)',
     // transitionProperty: 'background-color, backdrop-filter',
-    backgroundColor: 'rgba(0,0,0,.1)',
+    // backgroundColor: 'rgba(0,0,0,.1)',
   },
 
   button: {
@@ -38,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   lineOpen: {
-    background: 'rgba(215,215,215,0.64)',
+    background: '#fff',
     borderRadius: '6px',
     width: '30px',
     height: '3px',
@@ -77,8 +77,8 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   menu: {
-    color: 'rgba(215,215,215,0.64)',
-    padding: '11px  0',
+    color: '#fff',
+    padding: '13px  0',
     fontWeight: 'lighter',
     fontSize: '1.3em',
     textTransform: 'uppercase'

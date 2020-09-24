@@ -1,20 +1,21 @@
 import React from 'react';
-import { ContentTop } from './content.top';
-import { ContentBottom } from './content.bottom';
-import { useStyles } from './index.styles';
+import {ContentTop} from './content.top';
+import {ContentBottom} from './content.bottom';
+import Grid from '@material-ui/core/Grid';
+import {useStyles} from './index.styles';
 
 const HomeTemplate: React.FC = (props) => {
     const classes = useStyles();
 
     return (
-          <div className={classes.container}>
-              <header className={classes.top}>
-                  <ContentTop {...props} />
-              </header>
-              <section className={classes.bottom}>
-                  <ContentBottom />
-              </section>
-          </div>
+        <Grid container className={classes.container}>
+            <Grid item sm={12}>
+                <ContentTop {...props} />
+            </Grid>
+            <Grid item sm={12} className={classes.bottomCover}>
+                <ContentBottom/>
+            </Grid>
+        </Grid>
     );
 };
 

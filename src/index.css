@@ -1,14 +1,7 @@
-@font-face {
-    font-family: 'Biotif';
-    src: local('Biotif'), url('./assets/font/Biotif-Black.ttf') format('ttf'), url('./assets/font/Biotif-Bold.ttf') format('ttf'),
-    url('./assets/font/Biotif-Regular.ttf') format('ttf'), url('./assets/font/Biotif-ExtraBold.ttf') format('ttf'),
-    url('./assets/font/Biotif-Book.ttf') format('ttf'), url('./assets/font/Biotif-SemiBold.ttf') format('ttf'),
-    url('./assets/font/Biotif-Light.ttf') format('ttf'), url('./assets/font/Biotif-Medium.ttf') format('ttf');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html,
 body {
     height: 100%;
     margin: 0;
-    font-family: 'Biotif';
+    font-family: 'Montserrat', sans-serif;
 }
