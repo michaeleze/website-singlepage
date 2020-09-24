@@ -8,14 +8,14 @@ const HomeTemplate: React.FC = (props) => {
 
     return (
           <div className={classes.container}>
-              <div className={classes.top}>
+              <header className={classes.top}>
                   <ContentTop {...props} />
-              </div>
-              <div className={classes.bottom}>
+              </header>
+              <section className={classes.bottom}>
                   <ContentBottom />
-              </div>
+              </section>
           </div>
     );
-}
+};
 
 export default HomeTemplate;

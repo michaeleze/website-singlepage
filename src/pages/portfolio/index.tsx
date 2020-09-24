@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import Me from '../../assets/images/me2.png';
 
-const AboutMeTemplate = lazy(() => import('../../components/templates/aboutme-template'));
+const AboutMeTemplate = lazy(() => import('../../components/templates/portfolio-template'));
 
 const content = {
     leftContent: <div style={{backgroundColor: '#fff'}}> <span> hello world</span></div>,
