@@ -14,6 +14,10 @@ const HomeTemplate = lazy(() => import('../../components/templates/home-template
 const LeftContent = (props: any) => {
     const { content } = props;
 
+    if (!content) {
+        return <h1> Loading ... </h1>
+    }
+
     return(
         <div style={{height: '100%', display: 'flex', justifyContent:'space-around', flexDirection: 'column', maxWidth: '90%', margin: 'auto', position: "relative"}}>
             <Typography variant="h2" component="h2">
