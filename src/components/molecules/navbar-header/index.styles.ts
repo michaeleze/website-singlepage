@@ -24,7 +24,6 @@ export const useStyles = makeStyles((theme) => ({
     cursor: 'pointer',
     display: 'flex',
     padding: 0,
-    flexGrow: 0,
     transition: 'all 1s ease',
     outline: 'none',
   },
@@ -39,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   lineOpen: {
-    background: 'rgba(0,0,0,.4)',
+    background: 'rgba(215,215,215,0.64)',
     borderRadius: '6px',
     width: '30px',
     height: '3px',
@@ -70,7 +69,7 @@ export const useStyles = makeStyles((theme) => ({
 
   text: {
     textDecoration: 'none',
-    color: '#020628',
+    color: 'white',
 
     '&:hover': {
       cursor: 'pointer',
@@ -78,6 +77,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   menu: {
+    color: 'rgba(215,215,215,0.64)',
     padding: '11px  0',
     fontWeight: 'lighter',
     fontSize: '1.3em',

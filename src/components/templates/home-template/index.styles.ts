@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
   bottom: {
-    height: '30%'
+    height: '35%'
   },
 
   bottomCover: {
@@ -16,7 +16,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   contact: {
-   width: '35%'
+   width: '45%'
   },
 
   container: {
@@ -27,7 +27,7 @@ export const useStyles = makeStyles((theme) => ({
 
   header: {
     boxSizing: 'border-box',
-    margin: '1em 0',
+    margin: '2.2em 0 1em 0',
   },
 
   icons: {
@@ -40,6 +40,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   portfolio: {
+    background: '#FC173E',
     flexGrow: 1,
 
     [theme.breakpoints.down('sm')]: {
@@ -48,7 +49,8 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   top: {
-    background: 'blue',
+    background: '#020628',
+    color: 'white',
     flexGrow: 1,
   },
 
@@ -62,5 +64,6 @@ export const useStyles = makeStyles((theme) => ({
 
   text: {
     height: '60%',
+    color: 'rgba(215,215,215,0.64)'
   }
 }));
