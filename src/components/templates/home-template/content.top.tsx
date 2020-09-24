@@ -12,12 +12,11 @@ export const ContentTop = (props: any) => {
     }
 
     return (
-        <header className={classes.top}>
-            <div className={classes.topCover}>
+        <header className={classes.topContainer}>
                 <Typography variant="h1" component="h1" className={classes.header}>
                     {header}
                 </Typography>
-                <div className={classes.textCover}>
+                <div className={classes.textContainer}>
                     <Typography variant="h3" component="h3" className={classes.subHeader}>
                         {subHeader}
                     </Typography>
@@ -28,7 +27,6 @@ export const ContentTop = (props: any) => {
                         <SocialMediaLinks styles={classes}/>
                     </div>
                 </div>
-            </div>
         </header>
     );
 };

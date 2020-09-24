@@ -9,10 +9,10 @@ const HomeTemplate: React.FC = (props) => {
 
     return (
         <Grid container className={classes.container}>
-            <Grid item sm={12}>
+            <Grid item sm={12} className={classes.contentTopContainer}>
                 <ContentTop {...props} />
             </Grid>
-            <Grid item sm={12} className={classes.bottomCover}>
+            <Grid item sm={12}>
                 <ContentBottom/>
             </Grid>
         </Grid>

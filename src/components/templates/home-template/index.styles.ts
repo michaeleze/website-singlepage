@@ -9,13 +9,13 @@ export const useStyles = makeStyles((theme) => ({
         boxSizing: 'border-box',
 
         [theme.breakpoints.down('sm')]: {
-            padding: '4vw 0',
+            padding: '20vw 0',
         },
     },
 
-    bottom: {
-        width: '100%',
+    bottomContainer: {
         display: 'flex',
+        height: '100%',
 
         [theme.breakpoints.down('sm')]: {
             flexDirection: 'column',
@@ -33,22 +33,23 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 
-    contact: {
+    contactContainer: {
         background: '#FC173E',
-        flexBasis: '40%',
-        width: '100%'
     },
 
     container: {
         background: '#03004d',
+        height: '100%',
+        flexWrap: 'nowrap',
         flexDirection: 'column'
     },
 
-    contactContainer: {
-        background: 'red',
-        width: '80%',
-        height: '80%',
-        margin: 'auto'
+    contact: {
+        width: '40%',
+    },
+
+    contentTopContainer: {
+        background: '#03004d',
     },
 
     header: {
@@ -60,7 +61,6 @@ export const useStyles = makeStyles((theme) => ({
             fontSize: '5rem',
         },
 
-        '&:after': {}
     },
 
     icon: {
@@ -77,10 +77,8 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 
-    portfolio: {
+    portfolioContainer: {
         background: '#ffdd00',
-        flexGrow: 1,
-        flexBasis: '60%',
         width: '100%',
 
         [theme.breakpoints.down('sm')]: {
@@ -88,14 +86,14 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 
-    portfolioContainer: {
+    portfolio: {
         width: '80%',
         height: '80%',
         margin: 'auto'
     },
 
     socialMedia: {
-        margin: '1.4em',
+        margin: '1vw 2vw',
         padding: 0,
     },
 
@@ -114,7 +112,7 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 
-    textCover: {
+    textContainer: {
         display: 'flex',
         width: '100%',
         justifyContent: 'space-between',
@@ -124,16 +122,13 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 
-    top: {
-        color: 'white',
-        flexGrow: 1,
-        marginBottom: '10vh'
-    },
-
-    topCover: {
+    topContainer: {
+        background: '#03004d',
+        color: '#fff',
         display: 'flex',
         height: '100%',
         flexDirection: 'column',
+        marginBottom: '10vh',
         width: '80%',
         margin: 'auto'
     },

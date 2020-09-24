@@ -6,14 +6,14 @@ export const ContentBottom: React.FC = () => {
     const classes = useStyles();
 
     return (
-        <section className={classes.bottom}>
-            <div className={classes.portfolio}>
-                <div className={classes.portfolioContainer}>
+        <section className={classes.bottomContainer}>
+            <div className={classes.portfolioContainer}>
+                <div className={classes.portfolio}>
                     HelloWorld
                 </div>
             </div>
-            <div className={classes.contact}>
-                <div className={classes.contactContainer}>
+            <div className={classes.contactContainer}>
+                <div className={classes.contact}>
                     <img alt='michael-eze' srcSet={Me} style={{width: '100%', height: '100%', objectFit: 'cover'}}/>
                 </div>
             </div>
