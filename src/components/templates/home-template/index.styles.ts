@@ -1,42 +1,66 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
-  container: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(6, 1fr)',
-    gridTemplateRows: 'repeat(6, 1fr)',
-    height: '100%',
-  },
-  top: {
-    background: 'blue',
-    gridColumn: '1 / last-line',
-    gridRow: '1 / span 4',
-  },
   bottom: {
-    gridColumn: '1 /last-line',
-    gridRow: '4  / span 6',
+    height: '30%'
   },
-  topCover: {
-    display: 'grid',
+
+  bottomCover: {
+    display: 'flex',
     height: '100%',
-    gridTemplateColumns: 'repeat(9, 1fr)',
-    gridTemplateRows: 'repeat(9, 1fr)',
+
+    [theme.breakpoints.down('sm')]: {
+     flexDirection: 'row',
+      transition: 'all ease-in .6s'
+    },
   },
+
+  contact: {
+   width: '35%'
+  },
+
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%'
+  },
+
   header: {
     boxSizing: 'border-box',
-    gridColumn: '2 / span 7',
-    gridRow: '2',
     margin: '1em 0',
   },
+
   icons: {
+    boxSizing: 'border-box',
     display: 'flex',
+    height: '20%',
     justifyContent: 'center',
-    gridColumn: '1 / last-line',
-    gridRow: '9',
+    padding: '1rem 0',
     width: '100%',
   },
+
+  portfolio: {
+    flexGrow: 1,
+
+    [theme.breakpoints.down('sm')]: {
+      flexGrow: 0,
+    },
+  },
+
+  top: {
+    background: 'blue',
+    flexGrow: 1,
+  },
+
+  topCover: {
+    display: 'flex',
+    height: '100%',
+    flexDirection: 'column',
+    width: '80%',
+    margin: 'auto'
+  },
+
   text: {
-    gridColumn: '2 / span 7',
-    gridRow: '4',
+    height: '60%',
   }
 }));

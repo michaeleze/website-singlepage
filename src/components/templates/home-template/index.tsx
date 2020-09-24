@@ -1,12 +1,10 @@
 import React from 'react';
-import TwoColumnGrid, { IContent } from '../../organisms/two-column-grid';
 import { ContentTop } from './content.top';
-import { ContentRight } from './content.right';
+import { ContentBottom } from './content.bottom';
 import { useStyles } from './index.styles';
 
-const HomeTemplate: React.FC<IContent> = (props) => {
+const HomeTemplate: React.FC = (props) => {
     const classes = useStyles();
-    const gridContent = { leftContent: <ContentTop {...props} />, rightContent: <ContentRight /> };
 
     return (
           <div className={classes.container}>
@@ -14,6 +12,7 @@ const HomeTemplate: React.FC<IContent> = (props) => {
                   <ContentTop {...props} />
               </div>
               <div className={classes.bottom}>
+                  <ContentBottom />
               </div>
           </div>
     );
