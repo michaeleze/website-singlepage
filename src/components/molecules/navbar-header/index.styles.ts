@@ -12,9 +12,9 @@ export const useStyles = makeStyles((theme) => ({
     padding: '1rem 0',
     width: '100%',
     zIndex: 3,
-    backdropFilter: 'saturate(147%) blur(20px)',
-    transition: 'background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)',
-    transitionProperty: 'background-color, backdrop-filter',
+    // backdropFilter: 'saturate(147%) blur(20px)',
+    // transition: 'background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)',
+    // transitionProperty: 'background-color, backdrop-filter',
     backgroundColor: 'rgba(0,0,0,.1)',
   },
 

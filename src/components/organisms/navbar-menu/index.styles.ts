@@ -15,8 +15,6 @@ export const useStyles = makeStyles(() => ({
     width: '100%',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    transition: 'background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)',
-    transitionProperty: 'background-color, backdrop-filter',
     zIndex: 2,
   },
 

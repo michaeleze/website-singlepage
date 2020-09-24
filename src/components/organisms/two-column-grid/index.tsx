@@ -7,7 +7,7 @@ export interface IContent {
     rightContent?: ReactElement | undefined;
 }
 
-const TwoColumnLayout: React.FC<IContent> = (props) => {
+const TwoColumnGrid: React.FC<IContent> = (props) => {
   const classes = useStyles();
 
   const { leftContent, rightContent } = props;
@@ -16,16 +16,18 @@ const TwoColumnLayout: React.FC<IContent> = (props) => {
     <Grid container className={classes?.container}>
       <Grid
         item
-        className={classes?.leftColumn}
-        sm={7}
+        lg={4}
+        md={5}
+        sm={6}
         xs={12}
       >
           {leftContent}
       </Grid>
       <Grid
         item
-        className={classes.rightColumn}
-        sm={5}
+        lg={8}
+        md={7}
+        sm={6}
         xs={12}
       >
           {rightContent}
@@ -34,4 +36,4 @@ const TwoColumnLayout: React.FC<IContent> = (props) => {
   );
 };
 
-export default TwoColumnLayout;
+export default TwoColumnGrid;

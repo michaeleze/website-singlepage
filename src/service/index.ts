@@ -1,13 +1,17 @@
 // ToDO convert service to builder (utility class)
 
-class Service{
-    private static endpoint: string;
-    private static ERRORMESSAGE: string = 'Nothing found U+1F642';
+class ServiceClass{
+    private endpoint: string;
+    private ERRORMESSAGE: string = 'Nothing found U+1F642';
 
-    static async useFetch(endpoint: string, query: string) {
+    constructor(endpoint: string) {
+        this.endpoint = endpoint;
+    }
+
+    public async useFetch(query: string) {
         const body = JSON.stringify({query: query});
 
-        const data = await fetch(endpoint, {
+        const data = await fetch(this.endpoint, {
             body: body,
             headers: {
                 'Content-Type': 'application/json',
@@ -27,5 +31,8 @@ class Service{
         return Promise.resolve(res);
     }
 }
+
+const endpoint = 'https://portfolio-graphql-server.herokuapp.com/';
+const Service = new ServiceClass(endpoint);
 
 export default Service;

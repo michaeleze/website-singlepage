@@ -6,7 +6,9 @@
     url('./assets/font/Biotif-Light.ttf') format('ttf'), url('./assets/font/Biotif-Medium.ttf') format('ttf');
 }
 
+html,
 body {
+    height: 100%;
     margin: 0;
     font-family: 'Biotif';
 }
