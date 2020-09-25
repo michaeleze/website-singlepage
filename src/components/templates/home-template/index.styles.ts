@@ -80,6 +80,7 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '5rem',
         fontWeight: 900,
         textTransform: 'capitalize',
+        textDecoration: 'none',
         transition: 'all cubic-bezier(.2,.4,.9,.56) .4s',
         padding: '2vh 0',
 
@@ -106,6 +107,7 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '5rem',
         fontWeight: 900,
         textTransform: 'capitalize',
+        textDecoration: 'none',
         transition: 'all cubic-bezier(.2,.4,.9,.56) .4s',
         padding: '2vh 0',
 

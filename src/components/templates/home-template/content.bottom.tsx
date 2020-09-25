@@ -1,8 +1,9 @@
 import React from "react";
 import Grid from '@material-ui/core/Grid';
 //import Me from "../../../assets/images/me5.jpg";
-import {useStyles} from "./index.styles";
-import {Typography} from "@material-ui/core";
+import { useStyles } from "./index.styles";
+import { Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 export const ContentBottom: React.FC<any> = (props) => {
     const { links } = props;
@@ -11,13 +12,13 @@ export const ContentBottom: React.FC<any> = (props) => {
     return (
         <Grid container className={classes.bottomContainer}>
             <Grid item md={4} sm={12} xs={12}>
-                    <Typography className={classes.portfolio} component='p' variant='body1'>{links?.portfolio}</Typography>
+                    <Link className={classes.portfolio} to='/portfolio'>{links?.portfolio}</Link>
             </Grid>
             <Grid md={4} sm={12} xs={12}>
-                    <Typography className={classes.portfolioMenu} component='p' variant='body1'>{links?.blog}</Typography>
+                    <Link className={classes.portfolioMenu} to='blog'>{links?.blog}</Link>
             </Grid>
             <Grid item md={4} sm={12} xs={12}>
-                    <Typography className={classes.portfolioMenu} component='p' variant='body1'>{links?.contact}</Typography>
+                    <Link className={classes.portfolioMenu} to='contact'>{links?.contact}</Link>
             </Grid>
         </Grid>
     );
