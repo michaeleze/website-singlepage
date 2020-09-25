@@ -3,41 +3,29 @@ import { makeStyles } from '@material-ui/core';
 export const useStyles = makeStyles((theme) => ({
   footer: {
     textAlign: 'center',
+    color: '#D90368',
+    fontFamily: '"Montserrat", sans-serif',
   },
 
   icon: {
-    color: 'rgba(34,26,45,0.8)',
-    fontSize: '3em',
-    textAlign: 'center',
-    textDecoration: 'none',
-    margin: '0 1em',
-    transition: 'all 1s ease',
+    boxSizing: 'border-box',
+    color: 'rgba(0,0,0,0.77)',
+    fontSize: '2rem',
 
     '&:hover': {
-      color: '#FC173E',
-    },
-    '@media (max-width: 978px)': {
-      fontSize: '2.2rem',
-      margin: '0 .7em',
-    },
-  },
-
-  navLink: {
-    textDecoration: 'none',
-    transition: 'all 1s ease',
-
-    '&:hover': {
-      color: '#FC173E',
+      color: '#D90368',
     },
   },
 
   socialMedia: {
-    margin: 0,
-    padding: '0 0 1em 0',
-    textAlign: 'center',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 0,
   },
 
   socialMediaIcon: {
-    display: 'inline-block',
+    display: 'inline-flex',
+    padding: '.5em 1em',
   },
 }));

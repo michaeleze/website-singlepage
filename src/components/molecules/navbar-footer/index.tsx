@@ -22,7 +22,7 @@ const NavBarFooter: React.FC<IFooter> = (props) => {
 
   return (
     <>
-      <SocialMediaLinks socialMedia={socialMedia} />
+      <SocialMediaLinks styles={classes} socialMedia={socialMedia} />
       <p className={classes.footer}>{text}</p>
     </>
   );

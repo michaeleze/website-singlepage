@@ -2,8 +2,7 @@ import { makeStyles } from '@material-ui/core';
 
 export const useStyles = makeStyles(() => ({
   active: {
-    color: '#FC173E !important',
-    borderBottom: '2px solid #FC173E',
+    color: '#541388 !important',
   },
 
   container: {
@@ -20,41 +19,37 @@ export const useStyles = makeStyles(() => ({
 
   linkContainer: {
     boxSizing: 'border-box',
-    padding: '0 1em',
+    padding: '2vh 0',
+    fontSize: '5rem',
 
     '@media (max-width: 978px)': {
       padding: '.5em',
+      fontSize: '4rem',
     },
   },
 
   navLink: {
     textDecoration: 'none',
-    transition: 'all 1s ease',
-    color: '#020628',
+    transition: 'all cubic-bezier(.2,.4,.9,.56) .4s',
+    color: 'rgba(0,0,0,0.77)',
 
     '&:hover': {
-      color: '#FC173E',
+      color: '#D90368',
     },
   },
 
   navMenu: {
     boxSizing: 'border-box',
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
-    fontSize: '4.1rem',
+    justifyContent: 'center',
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 800,
     textTransform: 'capitalize',
     flexGrow: 1,
-    padding: '2em 0 0 0',
     whiteSpace: 'nowrap',
     overflow: 'auto',
-
-    '@media (max-width: 678px)': {
-      alignItems: 'center',
-      flexDirection: 'column',
-      fontSize: '3rem',
-      justifyContent: 'flex-start',
-    },
 
     '@media (max-width: 478px)': {
       fontSize: '2.5rem',

@@ -64,7 +64,7 @@ export const useStyles = makeStyles((theme) => ({
         fontSize: '2rem',
 
         '&:hover': {
-            color: '#fff',
+            color: '#D90368',
         },
     },
 

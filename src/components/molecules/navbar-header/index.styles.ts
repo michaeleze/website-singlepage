@@ -69,6 +69,10 @@ export const useStyles = makeStyles((theme) => ({
 
   text: {
     textDecoration: 'none',
+    borderRadius: '5px',
+    padding: '.4rem',
+    boxSizing: 'border-box',
+    border: '2px solid #D90368',
     color: '#000',
 
     '&:hover': {
@@ -79,14 +83,16 @@ export const useStyles = makeStyles((theme) => ({
   menu: {
     color: '#000',
     padding: '13px  0',
-    fontWeight: 'lighter',
+    fontWeight: 400,
     fontSize: '1.3em',
-    textTransform: 'uppercase'
+    fontFamily: '"Montserrat", sans-serif',
+    textTransform: 'capitalize'
   },
 
   title: {
     flexGrow: 1,
     padding: '15px',
+    fontFamily: '"Montserrat", sans-serif',
   },
 
   whiteBackground: {
