@@ -38,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   lineOpen: {
-    background: '#fff',
+    background: '#000',
     borderRadius: '6px',
     width: '30px',
     height: '3px',
@@ -69,7 +69,7 @@ export const useStyles = makeStyles((theme) => ({
 
   text: {
     textDecoration: 'none',
-    color: 'white',
+    color: '#000',
 
     '&:hover': {
       cursor: 'pointer',
@@ -77,7 +77,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   menu: {
-    color: '#fff',
+    color: '#000',
     padding: '13px  0',
     fontWeight: 'lighter',
     fontSize: '1.3em',

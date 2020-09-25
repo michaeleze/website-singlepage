@@ -2,10 +2,11 @@ import {makeStyles} from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
     body: {
-        color: 'rgba(255,255,255,0.79)',
-        lineHeight: 1.5,
-        fontWeight: 100,
-        padding: '1vw 3vw',
+        color: '#353535',
+        lineHeight: 1.7,
+        fontSize: '1.3rem',
+        fontWeight: 400,
+        padding: '0 3vw',
         boxSizing: 'border-box',
 
         [theme.breakpoints.down('sm')]: {
@@ -35,27 +36,30 @@ export const useStyles = makeStyles((theme) => ({
 
     contactContainer: {
         background: '#FC173E',
+        flexBasis: '25%',
     },
 
     container: {
-        background: '#03004d',
+        background: '#FFDA2C',
         height: '100%',
         flexWrap: 'nowrap',
         flexDirection: 'column'
     },
 
     contact: {
-        width: '40%',
+        height: '100%'
     },
 
     contentTopContainer: {
-        background: '#03004d',
+        background: '#FFDA2C',
     },
 
     header: {
         boxSizing: 'border-box',
+        color: '#fff',
         margin: '10vh 0',
-        fontWeight: 800,
+        fontWeight: 900,
+        whiteSpace: 'pre-line',
 
         [theme.breakpoints.down('sm')]: {
             fontSize: '5rem',
@@ -65,20 +69,16 @@ export const useStyles = makeStyles((theme) => ({
 
     icon: {
         boxSizing: 'border-box',
-        color: 'rgba(255,255,255,0.71)',
-        fontSize: '1.7rem',
+        color: '#000',
+        fontSize: '2rem',
 
         '&:hover': {
-            color: '#FC173E',
-        },
-
-        [theme.breakpoints.down('sm')]: {
-            fontSize: '1rem',
+            color: '#fff',
         },
     },
 
     portfolioContainer: {
-        background: '#ffdd00',
+        background: '#03004d',
         width: '100%',
 
         [theme.breakpoints.down('sm')]: {
@@ -103,8 +103,8 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     subHeader: {
-        color: '#fff',
-        fontWeight: 400,
+        color: '#614E00',
+        fontWeight: 600,
         textAlign: 'right',
 
         [theme.breakpoints.down('sm')]: {
@@ -123,8 +123,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     topContainer: {
-        background: '#03004d',
-        color: '#fff',
+        background: '#ffda2c',
         display: 'flex',
         height: '100%',
         flexDirection: 'column',
