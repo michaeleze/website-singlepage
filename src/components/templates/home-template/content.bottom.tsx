@@ -1,15 +1,19 @@
 import React from "react";
 import Me from "../../../assets/images/me5.jpg";
 import {useStyles} from "./index.styles";
+import {Typography} from "@material-ui/core";
 
-export const ContentBottom: React.FC = () => {
+export const ContentBottom: React.FC<any> = (props) => {
+    const { links } = props;
     const classes = useStyles();
 
     return (
         <section className={classes.bottomContainer}>
             <div className={classes.portfolioContainer}>
                 <div className={classes.portfolio}>
-                    HelloWorld
+                    <Typography component='p' variant='body1'>{links?.portfolio}</Typography>
+                    <Typography component='p' variant='body1'>{links?.blog}</Typography>
+                    <Typography component='p' variant='body1'>{links?.contact}</Typography>
                 </div>
             </div>
             <div className={classes.contactContainer}>

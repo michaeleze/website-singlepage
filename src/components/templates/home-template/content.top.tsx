@@ -3,7 +3,7 @@ import SocialMediaLinks from "../../molecules/socialmedia-links";
 import React from "react";
 import {useStyles} from './index.styles';
 
-export const ContentTop = (props: any) => {
+export const ContentTop: React.FC<any> = (props) => {
     const {body, header, subHeader} = props;
     const classes = useStyles();
 

@@ -13,7 +13,7 @@ const HomeTemplate: React.FC = (props) => {
                 <ContentTop {...props} />
             </Grid>
             <Grid item sm={12}>
-                <ContentBottom/>
+                <ContentBottom {...props}/>
             </Grid>
         </Grid>
     );

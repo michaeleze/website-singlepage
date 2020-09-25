@@ -13,7 +13,7 @@ const Home: React.FC = (): React.ReactElement => {
 
     useEffect(() => {
         (async () => {
-            const query = '{homePage{ \n header \n subHeader \n body }}';
+            const query = '{homePage { \n header \n subHeader \n body \n links { \n blog \n portfolio \n contact } }}';
             const response = await Service.useFetch(query);
 
             setState(response.data.homePage);
