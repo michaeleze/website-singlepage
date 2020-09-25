@@ -8,7 +8,7 @@ export const useStyles = makeStyles((theme) => ({
     body: {
         color: 'rgba(0,0,0,0.77)',
         lineHeight: 2,
-        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontFamily: '"Montserrat", sans-serif',
         fontSize: '1.2rem',
         fontWeight: 400,
         padding: '0 3vw',
@@ -48,8 +48,8 @@ export const useStyles = makeStyles((theme) => ({
         boxSizing: 'border-box',
         color: '#000',
         margin: '10vh 0',
-        fontFamily: '"Montserrat Alternates", sans-serif',
-        fontWeight: 900,
+        fontFamily: '"Montserrat", sans-serif',
+        fontWeight: 800,
         whiteSpace: 'pre-line',
 
         [theme.breakpoints.down('sm')]: {
@@ -76,7 +76,7 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         height: '100%',
         color: '#fff',
-        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontFamily: '"Montserrat", sans-serif',
         fontSize: '5rem',
         fontWeight: 900,
         textTransform: 'capitalize',
@@ -102,7 +102,7 @@ export const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         height: '100%',
         color: '#fff',
-        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontFamily: '"Montserrat", sans-serif',
         fontSize: '5rem',
         fontWeight: 900,
         textTransform: 'capitalize',
@@ -132,7 +132,7 @@ export const useStyles = makeStyles((theme) => ({
 
     subHeader: {
         color: '#614E00',
-        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontFamily: '"Montserrat", sans-serif',
         fontWeight: 500,
         textAlign: 'right',
 
