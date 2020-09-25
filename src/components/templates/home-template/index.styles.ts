@@ -1,10 +1,15 @@
 import {makeStyles} from '@material-ui/core/styles';
 
+//D90368
+//FFDA2C
+//541388
+
 export const useStyles = makeStyles((theme) => ({
     body: {
-        color: '#353535',
-        lineHeight: 1.7,
-        fontSize: '1.3rem',
+        color: 'rgba(0,0,0,0.77)',
+        lineHeight: 2,
+        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontSize: '1.2rem',
         fontWeight: 400,
         padding: '0 3vw',
         boxSizing: 'border-box',
@@ -15,49 +20,35 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     bottomContainer: {
-        display: 'flex',
         height: '100%',
-
-        [theme.breakpoints.down('sm')]: {
-            flexDirection: 'column',
-            transition: 'all ease-in .6s'
-        },
-    },
-
-    bottomCover: {
-        display: 'flex',
-        height: '100%',
-
-        [theme.breakpoints.down('sm')]: {
-            flexDirection: 'column',
-            transition: 'all ease-in .6s'
-        },
     },
 
     contactContainer: {
-        background: '#FC173E',
+        background: '#541388',
         flexBasis: '25%',
     },
 
     container: {
-        background: '#FFDA2C',
+        display: 'flex',
         height: '100%',
         flexWrap: 'nowrap',
         flexDirection: 'column'
     },
 
-    contact: {
-        height: '100%'
+    contentTopContainer: {
+        background: '#fff',
+        flexGrow: 1
     },
 
-    contentTopContainer: {
-        background: '#FFDA2C',
+    contentBottomContainer: {
+        height: '20%'
     },
 
     header: {
         boxSizing: 'border-box',
-        color: '#fff',
+        color: '#000',
         margin: '10vh 0',
+        fontFamily: '"Montserrat Alternates", sans-serif',
         fontWeight: 900,
         whiteSpace: 'pre-line',
 
@@ -69,7 +60,7 @@ export const useStyles = makeStyles((theme) => ({
 
     icon: {
         boxSizing: 'border-box',
-        color: '#000',
+        color: 'rgba(0,0,0,0.77)',
         fontSize: '2rem',
 
         '&:hover': {
@@ -77,19 +68,56 @@ export const useStyles = makeStyles((theme) => ({
         },
     },
 
-    portfolioContainer: {
-        background: '#03004d',
-        width: '100%',
+    portfolio: {
+        background: '#D90368',
+        boxSizing: 'border-box',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        color: '#fff',
+        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontSize: '5rem',
+        fontWeight: 900,
+        textTransform: 'capitalize',
+        transition: 'all cubic-bezier(.2,.4,.9,.56) .4s',
+        padding: '2vh 0',
 
         [theme.breakpoints.down('sm')]: {
-            flexGrow: 0,
+            fontSize: '3rem',
+        },
+
+        '&:hover': {
+            background: '#fff',
+            color: '#D90368',
+            cursor: 'pointer'
         },
     },
 
-    portfolio: {
-        width: '80%',
-        height: '80%',
-        margin: 'auto'
+    portfolioMenu: {
+        background: '#ffdd00',
+        boxSizing: 'border-box',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
+        color: '#fff',
+        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontSize: '5rem',
+        fontWeight: 900,
+        textTransform: 'capitalize',
+        transition: 'all cubic-bezier(.2,.4,.9,.56) .4s',
+        padding: '2vh 0',
+
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '3rem',
+        },
+
+        '&:hover': {
+            background: '#fff',
+            color: '#ffdd00',
+            cursor: 'pointer'
+        },
     },
 
     socialMedia: {
@@ -104,7 +132,8 @@ export const useStyles = makeStyles((theme) => ({
 
     subHeader: {
         color: '#614E00',
-        fontWeight: 600,
+        fontFamily: '"Montserrat Alternates", sans-serif',
+        fontWeight: 500,
         textAlign: 'right',
 
         [theme.breakpoints.down('sm')]: {
@@ -123,9 +152,8 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     topContainer: {
-        background: '#ffda2c',
+        background: '#fff',
         display: 'flex',
-        height: '100%',
         flexDirection: 'column',
         marginBottom: '10vh',
         width: '80%',

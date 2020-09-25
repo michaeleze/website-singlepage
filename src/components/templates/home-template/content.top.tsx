@@ -12,7 +12,7 @@ export const ContentTop: React.FC<any> = (props) => {
     }
 
     return (
-        <header className={classes.topContainer}>
+        <div className={classes.topContainer}>
                 <Typography variant="h1" component="h1" className={classes.header}>
                     {header}
                 </Typography>
@@ -27,6 +27,6 @@ export const ContentTop: React.FC<any> = (props) => {
                         <SocialMediaLinks styles={classes}/>
                     </div>
                 </div>
-        </header>
+        </div>
     );
 };
