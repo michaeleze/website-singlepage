@@ -13,6 +13,16 @@ export const routes: Array<IRoutes> = [
         Component: Home,
     },
     {
+        path: '/portfolio',
+        name: 'Portfolio',
+        Component: Contact,
+    },
+    {
+        path: '/blog',
+        name: 'Blog',
+        Component: Contact,
+    },
+    {
         path: '/contact',
         name: 'Contact',
         Component: Contact,
