@@ -13,20 +13,20 @@ export const ContentTop: React.FC<any> = (props) => {
 
     return (
         <div className={classes.topContainer}>
+            <div className={classes.headerContainer}>
                 <Typography variant="h1" component="h1" className={classes.header}>
                     {header}
                 </Typography>
-                <div className={classes.textContainer}>
-                    <Typography variant="h3" component="h3" className={classes.subHeader}>
-                        {subHeader}
-                    </Typography>
-                    <div>
-                        <Typography variant="body1" className={classes.body}>
-                            {body}
-                        </Typography>
-                        <SocialMediaLinks styles={classes}/>
-                    </div>
-                </div>
+                <SocialMediaLinks styles={classes}/>
+            </div>
+            <div className={classes.textContainer}>
+                <Typography variant="h3" component="h3" className={classes.subHeader}>
+                    {subHeader}
+                </Typography>
+                <Typography variant="body1" className={classes.body}>
+                    {body}
+                </Typography>
+            </div>
         </div>
     );
 };

@@ -41,13 +41,12 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     contentBottomContainer: {
-        height: '20%'
+        height: '30%'
     },
 
     header: {
         boxSizing: 'border-box',
         color: '#000',
-        margin: '10vh 0',
         fontFamily: '"Montserrat", sans-serif',
         fontWeight: 800,
         whiteSpace: 'pre-line',
@@ -55,13 +54,16 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: '5rem',
         },
+    },
 
+    headerContainer: {
+        margin: '10vh 0',
     },
 
     icon: {
         boxSizing: 'border-box',
         color: 'rgba(0,0,0,0.77)',
-        fontSize: '2rem',
+        fontSize: '2.5rem',
 
         '&:hover': {
             color: '#D90368',
@@ -123,13 +125,13 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     socialMedia: {
-        margin: '1vw 2vw',
+        margin: '5vh 0',
         padding: 0,
     },
 
     socialMediaIcon: {
         display: 'inline-flex',
-        padding: '.5em 1em',
+        padding: '0 2vw 0 0',
     },
 
     subHeader: {

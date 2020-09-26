@@ -2,7 +2,6 @@ import React from "react";
 import Grid from '@material-ui/core/Grid';
 //import Me from "../../../assets/images/me5.jpg";
 import { useStyles } from "./index.styles";
-import { Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 export const ContentBottom: React.FC<any> = (props) => {
