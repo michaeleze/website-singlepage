@@ -11,7 +11,7 @@ import Loader from 'react-loader-spinner'
 const HomeTemplate = lazy(() => import('../../components/templates/home-template'));
 
 const Home: React.FC = (): React.ReactElement => {
-    const [state, setState] = useState({});
+    const [state, setState] = useState(null as any);
     const classes = useStyles();
 
     useEffect(() => {
