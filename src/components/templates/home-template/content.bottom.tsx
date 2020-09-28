@@ -12,7 +12,7 @@ export const ContentBottom: React.FC<any> = (props) => {
             <Grid item md={4} sm={12} xs={12}>
                     <Link className={classes.portfolio} to='/portfolio'>{links?.portfolio}</Link>
             </Grid>
-            <Grid md={4} sm={12} xs={12}>
+            <Grid item md={4} sm={12} xs={12}>
                     <Link className={classes.portfolioMenu} to='blog'>{links?.blog}</Link>
             </Grid>
             <Grid item md={4} sm={12} xs={12}>
