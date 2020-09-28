@@ -5,8 +5,8 @@ import React, {
     useEffect
 } from 'react';
 import Service from '../../service';
-import { Typography } from "@material-ui/core";
 import { useStyles } from "./index.styles";
+import Loader from 'react-loader-spinner'
 
 const HomeTemplate = lazy(() => import('../../components/templates/home-template'));
 
@@ -26,7 +26,12 @@ const Home: React.FC = (): React.ReactElement => {
     if (!state) {
         return (
             <div className={classes.loaderContainer}>
-                <Typography component="h1" variant="h1" className={classes.loader}> Loading ... </Typography>
+                <Loader
+                    type="Puff"
+                    color="#fff"
+                    height={100}
+                    width={100}
+                />
             </div>
         )
     }
