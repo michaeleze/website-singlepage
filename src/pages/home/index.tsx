@@ -5,11 +5,14 @@ import React, {
     useEffect
 } from 'react';
 import Service from '../../service';
+import { Typography } from "@material-ui/core";
+import { useStyles } from "./index.styles";
 
 const HomeTemplate = lazy(() => import('../../components/templates/home-template'));
 
 const Home: React.FC = (): React.ReactElement => {
     const [state, setState] = useState({});
+    const classes = useStyles();
 
     useEffect(() => {
         (async () => {
@@ -18,7 +21,15 @@ const Home: React.FC = (): React.ReactElement => {
 
             setState(response.data.homePage);
         })()
-    },[]);
+    }, []);
+
+    if (!state) {
+        return (
+            <div className={classes.loaderContainer}>
+                <Typography component="h1" variant="h1" className={classes.loader}> Loading ... </Typography>
+            </div>
+        )
+    }
 
     return (
         <Suspense fallback={<div>Loading...</div>}>

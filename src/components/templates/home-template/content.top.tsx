@@ -1,16 +1,12 @@
-import {Typography} from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import SocialMediaLinks from "../../molecules/socialmedia-links";
 import React from "react";
 import Me from "../../../assets/images/me.jpg";
-import {useStyles} from './index.styles';
+import { useStyles } from './index.styles';
 
 export const ContentTop: React.FC<any> = (props) => {
     const {body, header, subHeader} = props;
     const classes = useStyles();
-
-    if (!props) {
-        return <h1> Loading ... </h1>
-    }
 
     return (
         <div className={classes.topContainer}>

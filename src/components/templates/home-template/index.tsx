@@ -1,7 +1,7 @@
 import React from 'react';
-import {ContentTop} from './content.top';
-import {ContentBottom} from './content.bottom';
-import {useStyles} from './index.styles';
+import { ContentTop } from './content.top';
+import { ContentBottom } from './content.bottom';
+import { useStyles } from './index.styles';
 
 const HomeTemplate: React.FC = (props) => {
     const classes = useStyles();

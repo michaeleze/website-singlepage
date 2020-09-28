@@ -56,6 +56,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     container: {
+        background: '#541388',
         display: 'flex',
         minHeight: '100vh',
         flexWrap: 'nowrap',
@@ -76,7 +77,6 @@ export const useStyles = makeStyles((theme) => ({
         color: '#fff',
         fontFamily: '"Montserrat", sans-serif',
         fontWeight: 800,
-        textShadow: '1px 1px 15px rgb(0 0 0 / 18%)',
         whiteSpace: 'pre-line',
 
         [theme.breakpoints.down('sm')]: {
@@ -127,6 +127,19 @@ export const useStyles = makeStyles((theme) => ({
         width: '15rem',
         height: '14rem',
         boxSizing: 'border-box',
+    },
+
+    loading: {
+        color: "#fff",
+        fontFamily: '"Montserrat", sans-serif',
+        textAlign: 'center',
+        margin:'auto',
+        width: '100%',
+        height: '100%',
+        alignSelf: 'center',
+        justifySelf: 'center',
+        fontWeight: 800,
+        textShadow: '1px 1px 15px rgb(0 0 0 / 18%)',
     },
 
     portfolio: {
