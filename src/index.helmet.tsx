@@ -28,7 +28,8 @@ const ReactApp = () => (
             <meta name="medium:site" content="https://medium.com/@michael.eze" />
             <meta name="medium:title" content="Michael Eze &mdash; Germany Based Full-Stack - Node React Engineer"/>
             <meta name="linkedin:description"  content="Michael Eze is a passionate Software Engineer <FrontEnd /> and Full-Stack - React Node Engineer also skilled in UX designing based in Germany. Hobbies are programming, dancing, music, cooking and sports(basket ball and football)"/>
-            <link rel="icon" href="%PUBLIC_URL%/me.jpg"/>
+          <meta name="linkedin:image" content="%PUBLIC_URL%/me.jpg" />
+          <link rel="icon" href="%PUBLIC_URL%/me.jpg" />
             <meta name="viewport"
                   content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes"/>
             <meta name="theme-color" content="#000000"/>
