@@ -16,10 +16,10 @@ const Navigation = () => {
     };
 
     return(
-        <header>
+        <nav>
             <NavBarHeader handleOpenMenu={handleOpenMenu} handleCloseMenu={handleCloseMenu} openMenu={openMenu} />
             <NavBarMenu handleCloseMenu={handleCloseMenu} openMenu={openMenu} routes={routes} socialMedia={mockSocialMediaItems}/>
-        </header>
+        </nav>
         )
 }
 

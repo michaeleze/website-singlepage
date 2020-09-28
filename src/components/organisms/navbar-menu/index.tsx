@@ -28,7 +28,7 @@ const NavBarMenu: React.FC<INavbar> = (props) => {
         <>
             {openMenu
             && (
-                <nav className={classes.container}>
+                <div className={classes.container}>
                     <div className={classes.navMenu}>
                         {
                             routes?.map(({name, path}: IRoutes) => (
@@ -47,7 +47,7 @@ const NavBarMenu: React.FC<INavbar> = (props) => {
                         }
                     </div>
                     <NavBarFooter socialMedia={socialMedia} text={text}/>
-                </nav>
+                </div>
             )
             }
         </>

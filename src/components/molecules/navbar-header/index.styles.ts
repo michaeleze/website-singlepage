@@ -38,7 +38,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   lineOpen: {
-    background: '#000',
+    background: '#fff',
     borderRadius: '6px',
     width: '30px',
     height: '3px',
@@ -56,13 +56,13 @@ export const useStyles = makeStyles((theme) => ({
     height: '3px',
 
     '&:nth-child(even)': {
-      transition: 'transform 1s ease',
+      transition: 'all cubic-bezier(.2,.4,.9,.56) .4s',
       transform: 'rotate(-45deg)',
     },
     '&:nth-child(odd)': {
       position: 'relative',
       top: '3px',
-      transition: 'transform 1s ease',
+      transition: 'all cubic-bezier(.2,.4,.9,.56) .4s',
       transform: 'rotate(45deg)',
     },
   },
@@ -73,7 +73,7 @@ export const useStyles = makeStyles((theme) => ({
     padding: '.4rem',
     boxSizing: 'border-box',
     border: '2px solid #D90368',
-    color: '#000',
+    color: '#fff',
 
     '&:hover': {
       cursor: 'pointer',
@@ -81,12 +81,12 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   menu: {
-    color: '#000',
+    color: '#fff',
     padding: '13px  0',
     fontWeight: 400,
     fontSize: '1.3em',
     fontFamily: '"Montserrat", sans-serif',
-    textTransform: 'capitalize'
+    textTransform: 'uppercase'
   },
 
   title: {

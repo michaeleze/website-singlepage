@@ -1,6 +1,5 @@
 import React from "react";
 import Grid from '@material-ui/core/Grid';
-//import Me from "../../../assets/images/me5.jpg";
 import { useStyles } from "./index.styles";
 import { Link } from "react-router-dom";
 

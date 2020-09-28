@@ -14,6 +14,8 @@ export const useStyles = makeStyles(() => ({
     width: '100%',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    padding: '2vw 0',
+    boxSizing: 'border-box',
     zIndex: 2,
   },
 

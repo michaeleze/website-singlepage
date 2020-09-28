@@ -6,7 +6,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
     body: {
-        color: 'rgba(0,0,0,0.77)',
+        color: 'rgba(255,255,255,0.81)',
         lineHeight: 2,
         fontFamily: '"Montserrat", sans-serif',
         fontSize: '1.2rem',
@@ -30,25 +30,26 @@ export const useStyles = makeStyles((theme) => ({
 
     container: {
         display: 'flex',
-        height: '100%',
+        minHeight: '100vh',
         flexWrap: 'nowrap',
         flexDirection: 'column'
     },
 
     contentTopContainer: {
-        background: '#fff',
+        background: '#541388',
         flexGrow: 1
     },
 
     contentBottomContainer: {
-        height: '30%'
+        height: '20%'
     },
 
     header: {
         boxSizing: 'border-box',
-        color: '#000',
+        color: '#fff',
         fontFamily: '"Montserrat", sans-serif',
         fontWeight: 800,
+        textShadow: '1px 1px 15px rgb(0 0 0 / 18%)',
         whiteSpace: 'pre-line',
 
         [theme.breakpoints.down('sm')]: {
@@ -57,17 +58,48 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     headerContainer: {
+        display: 'flex',
+        justifyContent: 'space-between',
         margin: '10vh 0',
+
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+        },
     },
 
     icon: {
         boxSizing: 'border-box',
-        color: 'rgba(0,0,0,0.77)',
+        color: '#fff',
         fontSize: '2.5rem',
 
         '&:hover': {
             color: '#D90368',
         },
+    },
+
+    img: {
+        width: 'auto',
+        height: '100%',
+        objectFit: 'cover',
+        position: 'relative',
+        right: '3vw',
+        top: '3vw',
+        transition: 'all cubic-bezier(.4,-.4,.9,.56) .4s',
+
+        '&:hover': {
+            right: 0,
+            top: 0,
+        },
+
+    },
+
+    imgContainer: {
+        alignSelf: '',
+        border: '2px solid #fff',
+        position: 'relative',
+        width: '15vw',
+        height: '15vw',
+        boxSizing: 'border-box',
     },
 
     portfolio: {
@@ -87,7 +119,7 @@ export const useStyles = makeStyles((theme) => ({
         padding: '2vh 0',
 
         [theme.breakpoints.down('sm')]: {
-            fontSize: '3rem',
+            fontSize: '2rem',
         },
 
         '&:hover': {
@@ -98,13 +130,13 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     portfolioMenu: {
-        background: '#ffdd00',
+        background: '#fff',
         boxSizing: 'border-box',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         height: '100%',
-        color: '#fff',
+        color: '#000',
         fontFamily: '"Montserrat", sans-serif',
         fontSize: '5rem',
         fontWeight: 900,
@@ -114,12 +146,12 @@ export const useStyles = makeStyles((theme) => ({
         padding: '2vh 0',
 
         [theme.breakpoints.down('sm')]: {
-            fontSize: '3rem',
+            fontSize: '2rem',
         },
 
         '&:hover': {
             background: '#fff',
-            color: '#ffdd00',
+            color: '#D90368',
             cursor: 'pointer'
         },
     },
@@ -135,7 +167,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     subHeader: {
-        color: '#614E00',
+        color: '#fff',
         fontFamily: '"Montserrat", sans-serif',
         fontWeight: 500,
         textAlign: 'right',
@@ -156,7 +188,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     topContainer: {
-        background: '#fff',
+        background: '#541388',
         display: 'flex',
         flexDirection: 'column',
         marginBottom: '10vh',
