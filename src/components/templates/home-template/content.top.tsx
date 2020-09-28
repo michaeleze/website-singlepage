@@ -22,7 +22,7 @@ export const ContentTop: React.FC<any> = (props) => {
                     <SocialMediaLinks styles={classes}/>
                 </div>
                 <div className={classes.imgContainer}>
-                    <img alt="michael eze" src={Me} className={classes.img} />
+                    <img alt="michael eze" src={Me} className={classes.img}/>
                 </div>
             </div>
             <div className={classes.textContainer}>
@@ -32,6 +32,9 @@ export const ContentTop: React.FC<any> = (props) => {
                 <Typography variant="body1" className={classes.body}>
                     {body}
                 </Typography>
+            </div>
+            <div className={classes.animatedLineContainer}>
+                <hr className={classes.animatedLine}/>
             </div>
         </div>
     );

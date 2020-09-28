@@ -5,6 +5,33 @@ import {makeStyles} from '@material-ui/core/styles';
 //541388
 
 export const useStyles = makeStyles((theme) => ({
+    animatedLine: {
+        animation: '$line cubic-bezier(.2,.4,.9,.56) 860ms infinite',
+        alignSelf: 'flex-end',
+        border: 'none',
+        background: '#D90368',
+        borderRadius: '1rem',
+        boxSizing: 'border-box',
+        height: '8vh',
+        width: '10px',
+        marginTop: '2vh'
+    },
+
+    "@keyframes line": {
+        "0%": {
+            opacity: 0,
+            height: 0,
+        },
+        "100%": {
+            opacity: 1,
+            height: '7vh',
+        }
+    },
+
+    animatedLineContainer: {
+        height: '9vh',
+    },
+
     body: {
         color: 'rgba(255,255,255,0.81)',
         lineHeight: 2,
@@ -78,7 +105,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     img: {
-        width: 'auto',
+        width: '100%',
         height: '100%',
         objectFit: 'cover',
         position: 'relative',
@@ -95,10 +122,10 @@ export const useStyles = makeStyles((theme) => ({
 
     imgContainer: {
         alignSelf: '',
-        border: '2px solid #fff',
+        border: '3px solid #D90368',
         position: 'relative',
-        width: '15vw',
-        height: '15vw',
+        width: '15rem',
+        height: '14rem',
         boxSizing: 'border-box',
     },
 
