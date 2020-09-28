@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
-export const useStyles = makeStyles(() => ({
+export const useStyles = makeStyles((theme) => ({
   active: {
     color: '#541388 !important',
   },
@@ -24,9 +24,8 @@ export const useStyles = makeStyles(() => ({
     padding: '2vh 0',
     fontSize: '5rem',
 
-    '@media (max-width: 978px)': {
-      padding: '.5em',
-      fontSize: '4rem',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '3.6rem',
     },
   },
 
@@ -57,4 +56,8 @@ export const useStyles = makeStyles(() => ({
       fontSize: '2.5rem',
     },
   },
+
+  showNavbar: {
+
+  }
 }));
