@@ -19,7 +19,7 @@ const ReactApp = () => (
                   content="Michael Eze is a passionate Software Engineer | FrontEnd and Full-Stack - React Node Engineer also skilled in UX designing based in Germany. Hobbies are programming, dancing, music, cooking and sports(basket ball and football)"/>
             <meta property="og:url" content="https://www.michaeleze.de"/>
             <meta property="og:site_name" content="Michael Eze"/>
-            <meta property="og:image" content="%PUBLIC_URL%/me.jpg"/>
+            <meta property="og:image" content="https://github.com/michaeleze/portfolio/blob/master/public/me.jpg"/>
             <meta name="linkedin:card" content="summary"/>
             <meta name="linkedin:site" content="https://linkedin.com/in/michaeleze"/>
             <meta name="linkedin:title" content="Michael Eze &mdash; Germany Based Full-Stack - Node React Engineer"/>
@@ -28,13 +28,13 @@ const ReactApp = () => (
             <meta name="medium:site" content="https://medium.com/@michael.eze" />
             <meta name="medium:title" content="Michael Eze &mdash; Germany Based Full-Stack - Node React Engineer"/>
             <meta name="linkedin:description"  content="Michael Eze is a passionate Software Engineer <FrontEnd /> and Full-Stack - React Node Engineer also skilled in UX designing based in Germany. Hobbies are programming, dancing, music, cooking and sports(basket ball and football)"/>
-          <meta name="linkedin:image" content="%PUBLIC_URL%/me.jpg" />
-          <link rel="icon" href="%PUBLIC_URL%/me.jpg" />
+          <meta name="linkedin:image" content="https://github.com/michaeleze/portfolio/blob/master/public/me.jpg" />
+          <link rel="icon" href="https://github.com/michaeleze/portfolio/blob/master/public/me.jpg" />
             <meta name="viewport"
                   content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes"/>
             <meta name="theme-color" content="#000000"/>
             <title ng-bind="_title">Michael Eze &mdash; Germany Based Full-Stack Software Engineer</title>
-            <link rel="apple-touch-icon" href="%PUBLIC_URL%/me.jpg"/>
+            <link rel="apple-touch-icon" href="https://github.com/michaeleze/portfolio/blob/master/public/me.jpg"/>
             <title> Michael Eze </title>
         </Helmet>
         <App />
