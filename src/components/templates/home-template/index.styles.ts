@@ -197,7 +197,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     socialMedia: {
-        margin: '5vh 0',
+        margin: '4rem 0 1rem 0',
         padding: 0,
     },
 
