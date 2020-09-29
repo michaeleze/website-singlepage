@@ -14,9 +14,9 @@ export const ContentTop: React.FC<any> = (props) => {
         <section className={classes.topContainer}>
             <div className={classes.headerContainer}>
                 <div>
-                    <Typography variant="h1" component="h1" className={classes.header}>
+                    <h1 className={classes.header}>
                         {header}
-                    </Typography>
+                    </h1>
                     <SocialMediaLinks styles={classes}/>
                 </div>
                 <div className={classes.imgContainer}>
@@ -24,10 +24,10 @@ export const ContentTop: React.FC<any> = (props) => {
                 </div>
             </div>
             <div className={classes.textContainer}>
-                <Typography variant="h3" component="h3" className={classes.subHeader}>
+                <h3 className={classes.subHeader}>
                     {subHeader}
-                </Typography>
-                <Typography variant="body1" className={classes.body} dangerouslySetInnerHTML={body && createMarkup()} />
+                </h3>
+                <div className={classes.body} dangerouslySetInnerHTML={body && createMarkup()} />
             </div>
             <div className={classes.animatedLineContainer}>
                 <hr className={classes.animatedLine}/>
