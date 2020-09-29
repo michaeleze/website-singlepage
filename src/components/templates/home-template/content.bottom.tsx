@@ -8,7 +8,7 @@ export const ContentBottom: React.FC<any> = (props) => {
     const classes = useStyles();
 
     return (
-        <Grid container className={classes.bottomContainer}>
+        <Grid container component="section" className={classes.bottomContainer}>
             <Grid item md={4} sm={12} xs={12}>
                     <Link className={classes.portfolio} to='#'>{links?.portfolio}</Link>
             </Grid>

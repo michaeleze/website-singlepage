@@ -9,7 +9,7 @@ export const ContentTop: React.FC<any> = (props) => {
     const classes = useStyles();
 
     return (
-        <div className={classes.topContainer}>
+        <section className={classes.topContainer}>
             <div className={classes.headerContainer}>
                 <div>
                     <Typography variant="h1" component="h1" className={classes.header}>
@@ -32,6 +32,6 @@ export const ContentTop: React.FC<any> = (props) => {
             <div className={classes.animatedLineContainer}>
                 <hr className={classes.animatedLine}/>
             </div>
-        </div>
+        </section>
     );
 };
