@@ -27,9 +27,7 @@ export const ContentTop: React.FC<any> = (props) => {
                 <Typography variant="h3" component="h3" className={classes.subHeader}>
                     {subHeader}
                 </Typography>
-                <Typography variant="body1" className={classes.body} dangerouslySetInnerHTML={createMarkup()}>
-                    {body}
-                </Typography>
+                <Typography variant="body1" className={classes.body} dangerouslySetInnerHTML={createMarkup()} />
             </div>
             <div className={classes.animatedLineContainer}>
                 <hr className={classes.animatedLine}/>
