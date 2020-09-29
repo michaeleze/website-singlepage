@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     FaGithub,
-    FaInstagram,
+    FaTwitter,
     FaLinkedin,
     FaXing
 } from "react-icons/all";
@@ -12,11 +12,11 @@ export const mockSocialMediaItems = [
         icon: <FaLinkedin/>,
     },
     {
-        link: 'https://instagram.com/michaelcityboy',
-        icon: <FaInstagram/>,
+        link: 'https://twitter.com/michaelcityboy',
+        icon: <FaTwitter/>,
     },
     {
-        link: 'https://xing.com/michaeleze',
+        link: 'https://www.xing.com/profile/michael_eze3',
         icon: <FaXing/>,
     },
     {
