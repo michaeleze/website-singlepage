@@ -1,4 +1,3 @@
-import { Typography } from "@material-ui/core";
 import SocialMediaLinks from "../../molecules/socialmedia-links";
 import React from "react";
 import Me from "../../../assets/images/me.jpg";
