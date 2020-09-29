@@ -8,6 +8,8 @@ export const ContentTop: React.FC<any> = (props) => {
     const {body, header, subHeader} = props;
     const classes = useStyles();
 
+    function createMarkup() { return {__html: body}; };
+
     return (
         <section className={classes.topContainer}>
             <div className={classes.headerContainer}>
@@ -25,7 +27,7 @@ export const ContentTop: React.FC<any> = (props) => {
                 <Typography variant="h3" component="h3" className={classes.subHeader}>
                     {subHeader}
                 </Typography>
-                <Typography variant="body1" className={classes.body}>
+                <Typography variant="body1" className={classes.body} dangerouslySetInnerHTML={createMarkup()}>
                     {body}
                 </Typography>
             </div>
