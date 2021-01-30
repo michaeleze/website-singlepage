@@ -32,7 +32,7 @@ class ServiceClass{
     }
 }
 
-const endpoint = 'https://portfolio-graphql-server.herokuapp.com/';
+const endpoint = 'https://us-central1-portfoliowebsite12345.cloudfunctions.net/graphql';
 const Service = new ServiceClass(endpoint);
 
 export default Service;
